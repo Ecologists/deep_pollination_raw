@@ -28,7 +28,7 @@ class model (BaseEstimator):
         self.num_feat=1
         self.num_labels=1
         self.is_trained=False
-        self.input_shape=(64,64,3)
+        self.input_shape=(128,128,3)
         
         model = Sequential()
         model.add(Conv2D(16, 3, activation='relu', input_shape=self.input_shape))
@@ -43,7 +43,7 @@ class model (BaseEstimator):
         model.add(Flatten())
         
         model.add(Dense(512, kernel_initializer='uniform', activation='relu'))
-        model.add(Dense(2, kernel_initializer='uniform', activation='sigmoid'))
+        model.add(Dense(5, kernel_initializer='uniform', activation='sigmoid'))
         model.compile(loss='categorical_crossentropy',optimizer='nadam', metrics=['accuracy'])
         self.model = model
     
@@ -74,11 +74,11 @@ class model (BaseEstimator):
     
         #Everything is good lets fit the data   
 
-        categorical_labels = to_categorical(y, num_classes=2)
-        X = X.reshape(len(X),64,64,3)
-        class_weight = {0: 0.13,
-                        1: 1.}
-        self.model.fit(X/255., categorical_labels,epochs=10, validation_split=0.2,batch_size=100,class_weight=class_weight)
+        categorical_labels = to_categorical(y, num_classes=5)
+        X = X.reshape(len(X), 128, 128, 3)
+#         class_weight = {0: 0.13,
+#                         1: 1.}
+        self.model.fit(X/255., categorical_labels, epochs=10, validation_split=0.2,batch_size=100)
         
         self.is_trained=True
         print("FIT: Training Successful")
@@ -103,7 +103,7 @@ class model (BaseEstimator):
         print("PREDICT: dim(y)= [{:d}, {:d}]".format(num_test_samples, self.num_labels))
         
         #everything is good lets predict
-        X = X.reshape(len(X),64,64,3)
+        X = X.reshape(len(X),128,128,3)
         y = self.model.predict(X/255.)
         print("PREDICT: Prediction done")
               

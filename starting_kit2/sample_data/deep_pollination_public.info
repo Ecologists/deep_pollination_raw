@@ -1,0 +1,16 @@
+usage = deep_pollination
+name = deep_pollination
+task = multiclass.classification
+target_type = Numerical
+feat_type = Numerical
+metric = balanced_accuracy_score
+feat_num = 49152
+target_num = 5
+label_num = 5
+train_num = 32
+valid_num = 4
+test_num = 4
+has_categorical = 0
+has_missing = 0
+is_sparse = 0
+time_budget = 500
