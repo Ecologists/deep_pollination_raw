@@ -1,0 +1,54 @@
+
+<h1>Evaluation</h1>
+
+<p>
+The problem is a multiclass classification problem. Each sample (an Image) is characterized by its feature extracted from opencv KAZE description (100 features). You must predict the Insect categories: bee, wasp, butterfly, other insect or other non-insect.
+</p>
+
+
+<p>
+You are given for training a data matrix X_train of dimension num_training_samples x num_features 
+and an array y_train of labels of dimension num_training_samples. You must train a model
+which predicts the labels for two test matrices X_valid and X_test. 
+</p>
+
+
+
+<p>
+<h3>Note:</h3>
+You are allowed to use features extracted from other images from other sources or use pre-trained neural networks.
+</p>
+
+
+
+<p>
+<h3>Phases:</h3>
+There are 2 phases:
+<ul>
+<li> <b>Phase 1: development phase. </b> We provide you with labeled training data and unlabeled validation and test data.
+Make predictions for both datasets. However, you will receive feed-back on your performance on the validation set only. 
+The performance of your LAST submission will be displayed on the leaderboard.
+<li> <b>Phase 2: final phase.</b> You do not need to do anything. Your last submission of phase 1 will be automatically forwarded.
+Your performance on the test set will appear on the leaderboard when the organizers finish checking the submissions. 
+</ul>
+</p>
+
+
+
+<p>
+<h3>Submissions:</h3>
+This competition allows you to submit either:
+<ul>
+<li> Only prediction results (no code).
+<li> A pre-trained prediction model. 
+<li> A prediction model that must be trained and tested. 
+</ul>
+</p>
+
+
+<p>
+<h3>Metric Of Evaluation:</h3>
+The submissions are evaluated using the <b>accuracy</b> metric.<br>
+<img src="https://storage.googleapis.com/ecologists_projecta_bucket/deep_pollination_images/evaluation_metric.png" alt="metric">
+</p>
+

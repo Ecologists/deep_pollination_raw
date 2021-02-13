@@ -1,0 +1,2 @@
+set3_score: 0.200000000000
+Duration: 0
