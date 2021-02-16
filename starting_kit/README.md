@@ -1,26 +1,20 @@
 Starting kit for Bees and Wasps Challenge.
 
-This challenge uses a combination of two datasets:
-    1) Bee vs wasp dataset from Kaggle
-    2) Dataset from MUSÉUM NATIONAL D’HISTOIRE NATURELLE
+This challenge uses a Dataset from MUSÉUM NATIONAL D’HISTOIRE NATURELLE
     
-The Kaggle dataset coniststs of total 11,409 images and the museum dataset consists of 290,000 images.
+The dataset coniststs of total 290,000 images and each image belongs to one of the following classes
 
-Each image in Kaggle dataset belongs to one of the four classes
-    1) Bee
-    2) Wasp
-    3) Other insect
-    4) Other
+    1)  Bee
+    2)  Wasp
+    3)  Other insect
+    4)  Butterfly insect
+    5)  Other
 
-Each image in Museum dataset belongs to one of the four classes
-    1) Bee
-    2) Wasp
-    3) Butterfly
-    4) Other insect
     
-This challenge is about creating and predicting a Machine Learning model and train it with the data provided to classify the images into the mentioned 4 categories. 
+This challenge is about creating and predicting a Machine Learning model and train it with the data provided to classify the images into the mentioned 5 categories. 
 
 The challenge consists of two phases:
+
     1) Development Phase
         In this phase you can train a model and submit at most 20 submissions per day to check the score of your model and to see how good your model is performing. Once you are satisfied with your performance then you can try the Final Phase.
     2) Final Phase
@@ -29,11 +23,11 @@ The challenge consists of two phases:
     
 
 References and credits: 
-    1)  George Rey (Kaggle : https://www.kaggle.com/jerzydziewierz/bee-vs-wasp)
-    2)  MUSÉUM NATIONAL D’HISTOIRE NATURELLE (https://www.mnhn.fr/)
-    3)  SPIPOLL (https://www.spipoll.org/)
-    4)  Université Paris Saclay (https://www.universite-paris-saclay.fr/)
-    5)  ChaLearn (http://www.chalearn.org/)
+
+    1)  MUSÉUM NATIONAL D’HISTOIRE NATURELLE (https://www.mnhn.fr/)
+    2)  SPIPOLL (https://www.spipoll.org/)      
+    3)  Université Paris Saclay (https://www.universite-paris-saclay.fr/)
+    4)  ChaLearn (http://www.chalearn.org/)
 
 
 Prerequisites:
