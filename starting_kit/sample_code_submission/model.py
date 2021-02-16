@@ -98,7 +98,7 @@ class model (BaseEstimator):
         num_test_samples = X.shape[0]
         if X.ndim>1: num_feat = X.shape[1]
         print("PREDICT: dim(X)= [{:d}, {:d}]".format(num_test_samples, num_feat))
-        if (self.num_feat != num_feat):
+        if (self.num_feat != 0) and (self.num_feat != num_feat):
             print("ARRGH: number of features in X does not match training data!")
         print("PREDICT: dim(y)= [{:d}, {:d}]".format(num_test_samples, self.num_labels))
         

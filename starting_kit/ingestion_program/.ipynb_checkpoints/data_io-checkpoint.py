@@ -131,7 +131,7 @@ def read_images(data_dir, numerical_labels=False):
     #TEST
     data["has_test"] = False
     test_images = []
-    if not valid.empty:
+    if not test.empty:
         print("\nReading Test Images")
         for index, row in test.iterrows():
             image_path = data_dir + '/' + row['FileName']

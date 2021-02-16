@@ -108,6 +108,7 @@ the_date = datetime.datetime.now().strftime("%y-%m-%d-%H-%M")
 # =========================== BEGIN PROGRAM ================================
 
 if __name__=="__main__" and debug_mode<4:	
+    
     #### Check whether everything went well (no time exceeded)
     execution_success = True
     
